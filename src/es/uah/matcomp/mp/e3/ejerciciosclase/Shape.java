@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases.ej35;
+package es.uah.matcomp.mp.e3.ejerciciosclase;
 
 public class Shape {
     private String color;
