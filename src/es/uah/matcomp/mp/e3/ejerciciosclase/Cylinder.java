@@ -1,6 +1,6 @@
 package es.uah.matcomp.mp.e3.ejerciciosclase;
 
-public class Cylinder extends Circle {  // Save as "Cylinder.java"
+public class Cylinder extends Circle3 {  // Save as "Cylinder.java"
     private double height;  // private variable
     // Constructor with default color, radius and height
     public Cylinder() {
