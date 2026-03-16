@@ -1,54 +1,41 @@
-package es.uah.matcomp.mp.e3.ejerciciosclase;
+package es.uah.matcomp.mp.e1.ejerciciosclases.ej35;
 
-public class Circle {  // Save as "es.uah.matcomp.mp.e1.ejerciciosclases.Circle.java"
-    // private instance variable, not accessible from outside this class
-    private double radius=1;
-    private String color="red";
+public class Circle extends Shape{
+    private double radius;
 
-    public Circle() {  // 1st (default) constructor
-        radius = 1.0;
-        color = "red";
+    public Circle(){
+        super();
+        radius=1.0;
     }
 
-
-
-    public Circle(double r) {  // 2nd constructor
-        this.radius = r;
+    public Circle(double radius){
+        super();
+        this.radius=radius;
     }
 
-    public Circle (double r, String c){
-        this.radius=r;
-        this.color=c;
-
+    public Circle(double radius, String color, boolean filled){
+        super(color,filled);
+        this.radius=radius;
     }
 
     public double getRadius() {
         return radius;
     }
 
-
-    public double getArea() {
-        return radius*radius*Math.PI;
+    public void setRadius(double radius) {
+        this.radius = radius;
     }
 
-    public String getColor(){
-        return color;
-    }
-    // Setter for instance variable radius
-    public void setRadius(double newRadius) {
-        this.radius = newRadius;
+    public double getArea(){
+        return Math.PI*Math.sqrt(radius);
     }
 
-
-    public void setColor(String newColor) {
-        this.color=newColor;
-
+    public double getPerimeter(){
+        return 2*Math.PI*radius;
     }
 
-    public String toString() {
-        return "[radius=" + radius + " color=" + color + "]";
-    }
-    public double getCircumference() {
-        return 2 * Math.PI * radius;
+    @Override
+    public String toString(){
+        return "Circle[" + super.toString() + ",radius=" + radius + "]";
     }
 }
