@@ -1,5 +1,4 @@
-package e3.ejerciciosclases;
-
+package es.uah.matcomp.mp.e3.ejerciciosclase;
 public class Cat extends Mammal{
     public Cat(String name){
         super(name);
