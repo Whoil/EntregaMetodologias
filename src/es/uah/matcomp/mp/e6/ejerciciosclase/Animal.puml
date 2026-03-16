@@ -1,5 +1,4 @@
 @startuml
-skinparam classAtributeIconSize 0
 
 abstract class Animal{
 + greeting():void
