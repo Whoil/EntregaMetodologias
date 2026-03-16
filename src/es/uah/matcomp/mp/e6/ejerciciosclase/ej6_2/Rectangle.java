@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases.ej62;
+package es.uah.matcomp.mp.e6.ejerciciosclase.ej6_2;
 
 public class Rectangle implements GeometricObject{
     private double width;
