@@ -1,22 +1,28 @@
 package es.uah.matcomp.mp.e6.ejerciciosclase.ej6_2;
 
 public class Circle implements GeometricObject {
-    private double radius;
+    private double radius; // radio del círculo
 
+    // Crea un círculo con el radio dado
     public Circle(double radius){
-        this.radius=radius;
+        this.radius = radius;
     }
 
+    @Override
     public String toString(){
+        // Representación en texto del círculo
         return "Circle[radius=" + radius + "]";
     }
+
     @Override
     public double getArea() {
-        return Math.PI*Math.sqrt(radius);
+        // Calcula el área a partir del radio
+        return Math.PI * Math.sqrt(radius);
     }
 
     @Override
     public double getPerimeter() {
-        return 2*Math.PI*radius;
+        // Calcula el perímetro del círculo
+        return 2 * Math.PI * radius;
     }
 }

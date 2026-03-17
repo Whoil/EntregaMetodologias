@@ -37,7 +37,7 @@ class ShapeTest {
     @Test
     void constructorVacio() {
         Shape s = createShape();
-        assertEquals("red ", s.getColor());
+        assertEquals("red", s.getColor());
         assertTrue(s.isFilled());
     }
 
@@ -78,6 +78,6 @@ class ShapeTest {
     @Test
     void testToString() {
         Shape s = createShape();
-        assertEquals("Shape [color=red , filler=true]", s.toString());
+        assertEquals("Shape [color=red, filler=true]", s.toString());
     }
 }
