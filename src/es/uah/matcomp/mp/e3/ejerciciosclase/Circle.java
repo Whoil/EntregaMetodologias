@@ -1,41 +1,50 @@
 package es.uah.matcomp.mp.e3.ejerciciosclase;
 
+// Clase Circle que hereda de Shape
 public class Circle extends Shape{
-        private double radius;
+    private double radius; // radio del círculo
 
-        public Circle(){
-            super();
-            radius=1.0;
-        }
+    // Constructor por defecto
+    public Circle(){
+        super();       // llama al constructor por defecto de Shape
+        radius=1.0;    // inicializa el radio a 1.0
+    }
 
-        public Circle(double radius){
-            super();
-            this.radius=radius;
-        }
+    // Constructor que recibe el radio
+    public Circle(double radius){
+        super();           // usa los valores por defecto de Shape
+        this.radius=radius;
+    }
 
-        public Circle(double radius, String color, boolean filled){
-            super(color,filled);
-            this.radius=radius;
-        }
+    // Constructor completo (radio, color y relleno)
+    public Circle(double radius, String color, boolean filled){
+        super(color,filled); // inicializa los atributos heredados
+        this.radius=radius;
+    }
 
-        public double getRadius() {
-            return radius;
-        }
+    // Devuelve el radio
+    public double getRadius() {
+        return radius;
+    }
 
-        public void setRadius(double radius) {
-            this.radius = radius;
-        }
+    // Modifica el radio
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
 
-        public double getArea(){
-            return Math.PI*Math.sqrt(radius);
-        }
+    // Calcula el área del círculo
+    public double getArea(){
+        return Math.PI*Math.sqrt(radius);
+    }
 
-        public double getPerimeter(){
-            return 2*Math.PI*radius;
-        }
+    // Calcula el perímetro
+    public double getPerimeter(){
+        return 2*Math.PI*radius;
+    }
 
-        @Override
-        public String toString(){
-            return "Circle[" + super.toString() + ",radius=" + radius + "]";
-        }
+    // Devuelve la información del círculo incluyendo la parte de Shape
+    @Override
+    public String toString(){
+        return "Circle[" + super.toString() + ",radius=" + radius + "]";
+    }
 }
