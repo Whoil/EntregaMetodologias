@@ -19,6 +19,6 @@ En el caso de métodos void, se comprueba que se ejecutan sin lanzar errores.
 
 Autores:
 
--Guillermo Salgado Malcuori
--Héctor Montero Plaza
--Álvaro Martínez del Campo
+- Guillermo Salgado Malcuori
+- Héctor Montero Plaza
+- Álvaro Martínez del Campo
