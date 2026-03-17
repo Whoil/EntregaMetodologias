@@ -3,7 +3,7 @@ package es.uah.matcomp.mp.e3.ejerciciosclase;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-import e3.ejerciciosclases.Person; // importamos la clase porque java no la encontraba
+import es.uah.matcomp.mp.e3.ejerciciosclase.Person; // importamos la clase porque java no la encontraba
 
 
 class PersonTest {
