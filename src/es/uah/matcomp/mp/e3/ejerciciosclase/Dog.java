@@ -7,10 +7,10 @@ public class Dog extends Mammal {
     public void greets(){
         System.out.println("Woof");
     }
-    public void greets(Dog another){
+    public void greets(Dog another){ //sobrecargamos el método greets
         System.out.println("Woooof");
     }
-    @Override
+    @Override // sobreescribimos el metodo de la superclase mammal
     public String toString(){
         return "Dog["+ super.toString() + "]";
     }
