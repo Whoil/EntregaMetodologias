@@ -1,5 +1,4 @@
-package e3.ejerciciosclases;
-
+package es.uah.matcomp.mp.e3.ejerciciosclase;
 public class Animal {
     private String name;
 
