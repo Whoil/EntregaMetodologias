@@ -6,6 +6,6 @@ public class Dog extends Animal {
         System.out.println("Woof!");
     }
     public void greeting(Dog another) {
-        System.out.println("Woooooooooof!");
+        System.out.println("Woooooooooof!"); // sobrecarga del metodo greeting
     }
 }
