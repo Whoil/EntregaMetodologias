@@ -28,7 +28,7 @@ public class Cylinder {
         return height;
     }
 
-
+    // A public method for retrieving the area
     public double getArea(){
         return 2*Math.PI*base.getRadius()*getHeight()+2*base.getArea();
     }

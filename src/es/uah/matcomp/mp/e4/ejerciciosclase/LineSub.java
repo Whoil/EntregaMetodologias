@@ -21,6 +21,7 @@ public class LineSub extends Point{// A line needs two points: begin and end.
         return "Begin: ("+getX()+", "+getY()+") End: ("+end.getX()+", "+end.getY()+")";
     }
 
+    //Begin and End getters;
     public Point getBegin() {
         return this;
     }
@@ -28,6 +29,8 @@ public class LineSub extends Point{// A line needs two points: begin and end.
         return end;
     }
 
+
+    //Begin and End setters
     public void setBegin(int beginx, int beginy) {
         super.setX(beginx);
         super.setY(beginy);
@@ -37,6 +40,8 @@ public class LineSub extends Point{// A line needs two points: begin and end.
         end.setY(endey);
     }
 
+
+    // Begin and End Y getters and X getters
     public int getBeginX() {
         return super.getX();
     }
@@ -50,6 +55,8 @@ public class LineSub extends Point{// A line needs two points: begin and end.
         return end.getY();
     }
 
+
+    //Begin and End Y setter and X setter
     public void setBeginX(int beginX) {
         super.setX(beginX);
     }
@@ -57,9 +64,8 @@ public class LineSub extends Point{// A line needs two points: begin and end.
     public void setBeginY(int beginY) {
         super.setY(beginY);
     }
-    public void setBeginXY(int beginX, int beginY) {
-        super.setXY(beginX, beginY);
-    }
+
+
     public void setEndX(int endX) {
         this.end.setX(endX);
     }
@@ -67,14 +73,20 @@ public class LineSub extends Point{// A line needs two points: begin and end.
         this.end.setY(endY);
     }
 
+    //Set End and Begin XY
+    public void setBeginXY(int beginX, int beginY) {
+        super.setXY(beginX, beginY);
+    }
+
     public void setEndXY(int endX, int endY) {
         this.end.setXY(endX, endY);
     }
-
+    //Method to get length
     public double getLength() {
         return end.distance(super.getX(),super.getY());
     }       // Length of the line
 
+    //Method to get Gradient
     public double getGradient() {
         int dx= end.getX()-super.getX();
         int dy=end.getY()-super.getY();
